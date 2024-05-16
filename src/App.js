@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Todo from './todo/Todo';
+import axios from "axios";
 
 function App() {
+
+  const [todoTask, settodoTask] = useState("");
+  const [todos, settodos] = useState([]);
+
+  axios.post("http://localhost:8000/Todo-Tasks", {
+    tasks: todos,
+  });
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Todo todos={todos} settodos={settodos} todoTask={todoTask} settodoTask={settodoTask} />
+
     </div>
   );
 }

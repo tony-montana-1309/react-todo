@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  height: 100rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bibi-circle{
+  cursor: pointer;
+}
+
+.bibi-circle :hover {
+  color: red;
+}
+
+.bibi-sun-fill{
+  color: #ffffff;
 }
