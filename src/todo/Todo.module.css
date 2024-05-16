@@ -1,0 +1,175 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topTodo {
+  background-image: url("../../images/bg-mobile-dark.jpg");
+  background-repeat: no-repeat;
+}
+
+.forTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10.5% 6%;
+}
+
+.textTodo {
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffff;
+}
+
+.sendBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: #1a1b2f;
+  border: 1px solid #1a1b2f;
+  margin: 1% 6%;
+  border-radius: 5px;
+}
+
+.icon {
+  width: 90%;
+  background-color: #1a1b2f;
+  border: 1px solid #1a1b2f;
+  color: #ffff;
+  padding: 2% 2%;
+}
+
+.color {
+  color: #1a1b2f;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: grey;
+  border: 1px solid #1a1b2f;
+  border-bottom-color: grey;
+  padding: 5% 0;
+}
+
+.todoList {
+  margin: 0 6%;
+  margin-top: 6%;
+  border: 1px solid #1a1b2f;
+  background-color: #1a1b2f;
+  border-radius: 5px;
+  padding: 0 5%;
+}
+
+.submit {
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.textCircel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+}
+
+.Text {
+  margin-left: 2.5%;
+  cursor: pointer;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5% 0;
+  color: grey;
+  font-size: 12px;
+}
+
+.items :hover {
+  color: purple;
+  cursor: pointer;
+}
+
+.Grouping {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #1a1b2f;
+  background-color: #1a1b2f;
+  border-radius: 5px;
+  color: grey;
+  margin: 2.5% 6%;
+  padding: 3% 20%;
+  font-size: 14px;
+}
+
+.all {
+  color: blueviolet;
+}
+
+.Grouping :hover {
+  color: purple;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 377px) {
+  .topTodo {
+    background-image: url("../../images/bg-desktop-dark.jpg");
+  }
+
+  .items :hover {
+    color: #ffff;
+  }
+
+  .Grouping {
+    margin: 0.1% 33%;
+    padding: 1% 8%;
+  }
+
+  .Grouping :hover {
+    color: #ffff;
+  }
+
+  .forTop {
+    margin: 0% 33%;
+    margin-bottom: 2.5%;
+    margin-top: 8%;
+  }
+
+  .todoList {
+    margin: 0% 33%;
+    margin-top: 3%;
+  }
+
+  .items {
+    padding: 4% 0%;
+  }
+
+  li {
+    padding: 4% 0%;
+  }
+
+  .sendBox {
+    margin: 0% 33%;
+  }
+
+  .todoList {
+    margin-top: 2%;
+  }
+
+  .icon {
+    padding: 3% 3%;
+  }
+}
